@@ -1,0 +1,29 @@
+#header{
+	height: 200px;
+	width:100%;
+	display: block;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+#himg {
+	height: 100%;
+	width:100%;
+	border-radius: 5px;
+	
+}
+
+.head{
+	border-radius: 5px;
+	padding: 0 10% 0% 10%;
+	text-align: center;
+}
+
+.para{
+	border-radius: 5px;
+	padding: 15px;
+}
+
+body{
+	margin: -2px;
+}

@@ -1,0 +1,148 @@
+
+
+.grid3 {
+    width: 90%;
+    column-count: 3;
+    column-gap: 5%;
+    -moz-column-count: 3;
+    -moz-column-gap: 5%;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid2 {
+    width: 90%;
+    -moz-column-count: 2;
+    -moz-column-gap: 5%;
+    column-count: 2;
+    column-gap: 5%;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.grid1 {
+    width: 90%;
+    -moz-column-count: 1;
+    -moz-column-gap: 5%;
+    column-count: 1;
+    column-gap: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.image1 {    
+    display: inline-block;
+    width: 90%;
+    margin-bottom: 5%;
+}
+
+.image2 {    
+    display: inline-block;
+    width: 60%;
+    margin-bottom: 5%;
+}
+
+
+.image3 {    
+    display: inline-block;
+    width: 30%;
+    margin-bottom: 5%;
+}
+
+.image1:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80); 
+}
+
+.image2:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80); 
+}
+
+.image3:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80); 
+}
+
+.img1{
+    display: inline-block;
+    max-width: 100%;
+    max-height: 90%
+    
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 767px)  {  
+
+.grid1 {
+    width: 90%;
+    -moz-column-count: 1;
+    -moz-column-gap: 0px;
+    column-count: 1;
+    column-gap: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}  
+
+
+.grid2 {
+    width: 90%;
+    -moz-column-count: 2;
+    -moz-column-gap: 0px;
+    column-count: 2;
+    column-gap: 0px;
+    margin-left: auto;
+    margin-right: auto;
+
+}  
+
+
+.grid3 {
+    width: 90%;
+    -moz-column-count: 3;
+    -moz-column-gap: 0px;
+    column-count: 3;
+    column-gap: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}  
+
+#except.grid3{
+     width: 90%;
+    -moz-column-count: 2;
+    -moz-column-gap: 0px;
+    column-count: 2;
+    column-gap: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.image1 {    
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.image2 {    
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+
+
+.image3 {    
+    display: inline-block;
+    width: 33.33%;
+    margin-bottom: 5%;
+    margin-left: 5%
+}
+
+
+}
+

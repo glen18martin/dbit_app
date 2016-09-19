@@ -1,0 +1,389 @@
+
+/*container to hold everything, resize as per requirement.
+*
+* "white-space: nowrap" -> So that all the inner div's stay on one line, and don't wrap to the next line within the main container
+* "overflow: hidden" -> Since all inner divs are in one line, a horizontal scrollbar appears, but overflow:hidden hides it from view
+*
+*/
+
+#container {
+
+	border: 2px solid #B60072;
+	height:450px;
+	width:90%;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: auto;
+	margin-top: auto;
+}
+
+
+
+/* Inner Div's
+*
+* "display: inline-block" -> declares that all div's must appear inline and not one below the other by default
+* "media only screen and (orientation: portrait) " -> alternative definition for mobile devices
+*
+*/
+
+.innerdiv {
+	display: inline-block;
+	background: white;
+	border: 1px solid #ffffff;
+	height:100%;
+	width: 45%; /* so we get 2 slides on 1 page (PC) */
+	margin:0;
+	margin-right: -4px; /* remove the gap in the center between 2 adjacent inline inner-divs*/
+}
+
+
+@media only screen and (max-width: 767px) 
+ {  
+	
+#container {
+
+	border: 2px solid #B60072;
+	height:425px;
+	width:90%;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: auto;
+	margin-top: auto;
+} 
+
+    .innerdiv {
+		display: inline-block;
+		background: white;
+		border: 1px solid white;
+		height: 425px;
+		width: 90%; /* so we get 1 slide + part if the next on 1 page (Mobile) */
+		margin:0;
+		margin-right: -4px;
+	}
+}
+
+
+
+@media only screen and (max-width: 954px) and (min-width: 767px)
+ {  
+	
+
+#container {
+
+	border: 2px solid #B60072;
+	height:350px;
+	width:90%;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: auto;
+	margin-top: auto;
+}
+
+
+
+/* Inner Div's
+*
+* "display: inline-block" -> declares that all div's must appear inline and not one below the other by default
+* "media only screen and (orientation: portrait) " -> alternative definition for mobile devices
+*
+*/
+
+.innerdiv {
+	display: inline-block;
+	background: white;
+	border: 1px solid #ffffff;
+	height:100%;
+	width: 45%; /* so we get 2 slides on 1 page (PC) */
+	margin:0;
+	margin-right: -4px; /* remove the gap in the center between 2 adjacent inline inner-divs*/
+}
+
+
+
+
+#left_holder {
+
+	display: inline-block;
+	/*background-color: #b60072;*/
+	height: 420px;
+	width: 6%;
+	position: absolute;
+	left: 0px;
+	cursor: pointer;
+
+	
+}
+
+#right_holder{
+	display: inline-block;
+	/*background-color: #b60072;*/
+	height: 420px;
+	width: 6%;
+	position: absolute;
+	right: 0px;
+	cursor: pointer;
+	
+}
+
+}
+
+
+/* Upper and Bottom Sections for the Inner Div's
+*
+* "width: 95%;" -> because you want a space in between 2 slides
+*
+*/
+
+.section {
+	display: block;
+	border: 1px solid #B60072;
+	height:55%;
+	box-shadow: 5px 10px 5px grey;
+	width: 95%;
+	margin: auto; /* stick to the center */
+	margin-top: 10px;
+	font-size:2em;
+	color:black;
+}
+
+
+
+
+.section2{
+	padding-top: 4%;
+	display: block;
+	border: 1px solid #B60072;
+	height:45%;
+	
+	width: 95%;
+	margin: auto; /* stick to the center */
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size:1.2em;
+	color:black;
+}
+
+
+.section:nth-child(1) {
+	background: grey;
+}
+.section:nth-child(2) {
+	background: brown;
+}
+
+
+
+@media only screen and (min-width: 954px) 
+ {
+
+#left_holder {
+
+	display: inline-block;
+	/*background-color: #b60072;*/
+	height: 496px;
+	width: 6%;
+	position: absolute;
+	left: 0px;
+	cursor: pointer;
+	
+
+	
+}
+
+#right_holder{
+	display: inline-block;
+	/*background-color: #b60072;*/
+	height: 496px;
+	width: 6%;
+	position: absolute;
+	right: 0px;
+	cursor: pointer;
+	
+	
+}
+
+span.glyphicon.glyphicon-menu-left{
+	color: #b60072;
+	height: 50px;
+	
+	position: absolute;
+	left: 38%;
+	top: 45%;
+}
+
+span.glyphicon.glyphicon-menu-right{
+	color: #b60072;
+	height: 50px;
+	
+	position: absolute;
+	top: 45%;
+	right:38%
+
+}
+
+}
+
+@media only screen and (max-width: 767px)  {    
+
+
+
+	.section2{
+	display: block;
+	border: 1px solid #B60072;
+	height:36%;
+	padding-top: 10%;
+	width: 95%;
+	
+	font-size:0.8em;
+	font-weight:bold;
+	color:solid black;
+	}
+    
+#left_holder {
+
+	
+	display: none;
+	height: 100%;
+	width: 50px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	cursor: pointer;
+}
+
+#right_holder{
+	
+	display: none;
+	height: 100%;
+	width: 50px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	cursor: pointer;
+}
+
+span.glyphicon.glyphicon-menu-left{
+	display: none;
+	color: #b60072;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	left: 8px;
+	top: 45%;
+}
+
+span.glyphicon.glyphicon-menu-right{
+	display: none;
+	color: #b60072;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	right: -24px;
+	top: 45%;
+}
+}
+
+@media only screen and (min-width: 1024px)  {    
+
+
+
+	.section2{
+		padding-top: 4%;
+	display: block;
+	border: 1px solid #B60072;
+	height:36%;
+	
+	width: 95%;
+	
+	font-size:1.2em;
+	font-weight:bold;
+	color:solid black;
+	}
+
+	
+}
+
+
+@media only screen and (min-width: 767px) and (max-width: 964px) 
+ {
+
+#left_holder {
+
+	display: inline-block;
+	/*background-color: #b60072;*/
+	height: 496px;
+	width: 6%;
+	position: absolute;
+	left: 0px;
+	cursor: pointer;
+	
+
+	
+}
+
+#right_holder{
+	display: inline-block;
+	/*background-color: #b60072;*/
+	height: 496px;
+	width: 6%;
+	position: absolute;
+	right: 0px;
+	cursor: pointer;
+	
+	
+}
+
+span.glyphicon.glyphicon-menu-left{
+	color: #b60072;
+	height: 50px;
+	
+	position: absolute;
+	left: 38%;
+	top: 45%;
+}
+
+span.glyphicon.glyphicon-menu-right{
+	color: #b60072;
+	height: 50px;
+	
+	position: absolute;
+	top: 45%;
+	right:38%
+
+}
+
+}
+.photo{
+
+	box-shadow: 10px 10px 5px grey;
+
+	height: 60%;
+	width: 80%;
+}
+
+
+@media only screen and (max-width: 480px)  {    
+.photo{
+
+
+	height: 70%;
+	width: 100%;
+}
+}
+
+
+
+@media only screen and (max-width: 767px) and (min-width: 442px)  {   
+.section2{
+	padding-top: 0%;
+	display: block;
+	border: 1px solid #B60072;
+	height:45%;
+	
+	width: 95%;
+	margin: auto; /* stick to the center */
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size:1.4em;
+	color:black;
+}

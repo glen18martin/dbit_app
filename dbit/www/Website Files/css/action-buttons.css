@@ -1,0 +1,108 @@
+
+   
+.fab_mail_btn{
+	display: none;
+  background-color:#F44336;
+  width:60px;
+  height:60px;
+  border-radius:100%;
+  background:#F44336;
+  border:none;
+  outline:none;
+  color:#FFF;
+  font-size:36px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition:.3s;  
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+
+ .fab_phone_btn{
+    	position: fixed;
+    	top: 82%;
+    	left: 5%;
+  
+  display: none;
+  background-color:#b60072;
+  width:40px;
+  height:40px;
+  border-radius:100%;
+  background:#b60072;
+  border:none;
+  outline:none;
+  color:#FFF;
+  font-size:36px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition:.3s;  
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+#contact{
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #B60072;
+}
+
+
+@media only screen and (max-width: 767px) { 
+
+	.pull-right{
+		display: none;
+	}
+	
+	#contact{
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+		border-bottom: 1px solid white;
+	}
+
+    .fab_mail_btn{
+    	position: fixed;
+    	top: 88%;
+    	left: 5%;
+    	padding-top: 3px;
+  
+  display: inline-block;
+  background-color:#b60072;
+  width:40px;
+  height:40px;
+  border-radius:100%;
+  background:#b60072;
+  border:none;
+  outline:none;
+  color:#FFF;
+  font-size:22px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition:.3s;  
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+
+
+ .fab_phone_btn{
+    	position: fixed;
+    	top: 78%;
+    	left: 5%;
+    	padding-top: 3px;
+  
+  display: inline-block;
+  background-color:#b60072;
+  width:40px;
+  height:40px;
+  border-radius:100%;
+  background:#b60072;
+  border:none;
+  outline:none;
+  color:#FFF;
+  font-size:22px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition:.3s;  
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+
+}
+
+
+/*<button onclick="location.href = 'tel:+918097377263';" class="fab_phone_btn"><span class="glyphicon glyphicon-earphone"></span></button>
+<button onclick="location.href = 'mailto:wedlockmemories@gmail.com';" class="fab_mail_btn"><span class="glyphicon glyphicon-envelope"></span></button>*/
