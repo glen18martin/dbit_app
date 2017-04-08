@@ -1,3 +1,5 @@
+Moved to Gitlab.com
+
 # dbit_app
 
 -> Royston Lobo -37
